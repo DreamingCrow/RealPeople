@@ -11,6 +11,9 @@ var saveAvatar = document.getElementById('save-avatar');
 		avatarShadow.classList.remove("active");
 		background.classList.remove("active");
 	}
+	$('#close-btn').on("click",function(){
+		//myFunc
+	});
 
 
 

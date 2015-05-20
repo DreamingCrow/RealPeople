@@ -45,7 +45,7 @@ header{
 .messages-link:before{
 	background-position: -67px -95px;
 }
-.search-link:after,.premium-link:after,.messages-link:after{
+.search-link>span,.premium-link>span,.messages-link>span{
 	display: inline-block;
 	margin-left: 5px;
 	width: 25px;
@@ -55,15 +55,6 @@ header{
 	text-align: center;
 	color: #e1778e;
 	font-weight: bold;
-}
-.search-link:after{
-	/*content: "4";*/
-}
-.premium-link:after{
-	/*content: "4";*/
-}
-.messages-link:after{
-	content: "4";
 }
 .user-menu-img{
 	display: inline-block;
@@ -329,9 +320,14 @@ button.sent:hover{
 }
 .location{
 	color: #666;
+	font-size: 12px;
 }
 .date{
 	color: #6e6e6e;
+	font-size: 12px;
+}
+.time{
+	font-size: 12px;
 }
 .status.online:before{
 	content: "";
@@ -382,6 +378,84 @@ button.sent:hover{
 }
 .answer-btn:hover{
 	background-color: #4abae8;
+}
+
+			/*			User Messages			*/
+/*.msg{
+	max-height: 500px;
+	overflow-y: scroll;
+}*/
+.receive-msg,
+.send-msg{
+	margin-bottom: 10px;
+}
+.send-msg .message,
+.receive-msg .message{
+	border: 1px solid #97e3ff;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+.receive-msg .message:before,
+.receive-msg .message>p:first-child:before,
+.send-msg .message:before,
+.send-msg .message>p:first-child:before{
+	content: "";
+	position: absolute;
+	display: block;
+	border-left: 7px solid transparent;
+	border-right: 14px solid transparent;
+	-ms-transform: rotate(51deg);
+	-webkit-transform: rotate(51deg);
+	transform: rotate(55deg);
+}
+.receive-msg .message:before{
+	border-bottom: 11px solid #fff;
+	top: 70px;
+	left: -10px;
+	z-index: 10;
+}
+.receive-msg .message>p:first-child:before{
+	border-bottom: 11px solid #97e3ff;
+	top: 13px;
+	left: -18px;
+	z-index: 5;
+}
+.send-msg .message:before,
+.send-msg .message>p:first-child:before{
+	border-right: 7px solid transparent;
+	border-left: 14px solid transparent;
+}
+.send-msg .message:before{
+	border-top: 11px solid #fff;
+	top: 53px;
+	right: -10px;
+	z-index: 10;
+}
+.send-msg .message>p:first-child:before{
+	border-top: 11px solid #97e3ff;
+	top: 48px;
+	right: -18px;
+	z-index: 5;
+}
+.send-msg>img{
+	margin-top: 80px;
+}
+.message{
+	min-height: 125px;
+}
+.mess-field{
+	border: 1px solid #e1778e;
+	border-radius: 10px;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.send-btn{
+	width: 160px;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-weight: bold;
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
