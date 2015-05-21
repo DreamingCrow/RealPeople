@@ -2,12 +2,16 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 header{
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 40px;
 }
 header>p{
 	margin-top: 20px;
 	color: #666;
+}
+h3{
+	font-size: 24px;
+	color: #5d5d5d;
 }
 .timeline{
 	border-bottom: 5px solid #c4d4e6;
@@ -25,7 +29,8 @@ p.active{
 	font-family: arial,sans-serif;
 }
 .big-rose-heart,
-.grey-heart{
+.grey-heart,
+.looking:after{
 	display: inline-block;
 	background-image: url('../images/sprite.png');
 	background-repeat: no-repeat;
@@ -62,4 +67,67 @@ p.active{
 }
 .step4{
 	right: -20px;
+}
+
+.looking{
+	color: #5d5d5d;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.looking>select{
+	position: relative;
+	border: none;
+	border-bottom: 2px solid #3ab2df;
+	margin: 0 20px;
+	color: #e1778e;
+	outline:none;
+	display: inline-block;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+}
+.looking>select>option{
+	border: none;
+}
+.looking>select:after{
+	position: absolute;
+	content: ">";
+	width: 10px;
+	height: 10px;
+	display: block;
+	background-position: -78px -85px;
+	background-color: #f0f;
+	z-index: 10;
+}
+p.grey-col{
+	color: #515151;
+}
+input{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+input[type=email]{
+	margin-top: 0px;
+}
+input[type=submit]{
+	font-weight: 700;
+	background-color: #3ab2df;
+	border-color: #97e3ff;
+	border-radius: 10px;
+}
+span.check:before{
+	content: "";
+	border: none;
+	display: inline-block;
+	border-left: 3px solid #12cb34;
+	border-bottom: 3px solid #12cb34;
+	height: 8px;
+	width: 15px;
+	-ms-transform: rotate(-50deg);
+	-webkit-transform: rotate(-50deg);
+	transform: rotate(-50deg);
+	margin-top: 8px;
+}
+form{
+	margin-bottom: 20px;
 }
