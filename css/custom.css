@@ -6,7 +6,10 @@ header{
 }
 
 			/*			Sprites			*/
-.img-art,.img-video,.img-design,.img-history,.img-pictures,.img-location,.search-link:before,.premium-link:before,.messages-link:before,.edit,div.editable>span,.user-info>span:before,.user-menu-img,.upload-img,.delete-btn,.answer-btn,.block-btn{
+.img-art,.img-video,.img-design,.img-history,.img-pictures,.img-location,
+.search-link:before,.premium-link:before,.messages-link:before,.edit,
+div.editable>span,.user-info>span:before,.user-menu-img,.upload-img,.delete-btn,
+.answer-btn,.block-btn,.report:before,.sent.send-mess:before{
 	background-image: url('../images/sprite.png');
 	background-repeat: no-repeat;
 }
@@ -25,7 +28,8 @@ header{
 	vertical-align: middle;
 }
 .search-link:before,.premium-link:before,.messages-link:before,
-.edit,div.editable>span,.user-info>span:before{
+.edit,div.editable>span,.user-info>span:before,.report:before,
+.sent.send-mess:before{
 	content: "";
 	display: inline-block;
 	width: 25px;
@@ -303,7 +307,8 @@ button.sent{
 button.receive:hover,
 button.sent:hover{
 	background-color: #fff;
-	color: #3ab2df;
+	color: #4ac2ef;
+	/*3ab2df*/
 }
 .receive>span{
 	color: #e1778e;
@@ -457,6 +462,58 @@ button.sent:hover{
 	margin-top: 10px;
 	font-weight: bold;
 }
+.sent.report{
+	color: #e1778e;
+}
+.sent.report,
+.sent.send-mess{
+	width: 200px;
+	height: 60px;
+}
+.sent.report:hover{
+	color: #F6613E;
+}
+.report:before{
+	background-position: -102px -85px;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	margin-top: 3px;
+	margin-bottom: -3px;
+}
+.sent.send-mess{
+	padding:0;
+	vertical-align: top;
+	margin-bottom: 0;
+}
+.sent.send-mess>*{
+	vertical-align: top;
+}
+.sent.send-mess>span{
+	margin-top: 15px;
+	margin-bottom: -15px;
+	display: inline-block;
+	height: 50px;
+}
+.sent.send-mess:before{
+	background-position: -8px -284px;
+	width: 50px;
+	height: 50px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.online-status{
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	background-color: #00c100;
+	color: #fff;
+	padding: 0 5px;
+	border-radius: 5px;
+	font-style: italic;
+	letter-spacing: 0.05em;
+}
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 	.avatar,.avatar-shadow{
@@ -533,6 +590,10 @@ button.sent:hover{
 		left: 50%;
 		margin-left: -255px;
 	}
+	.sent.report,
+	.sent.send-mess{
+		margin-top: 50px;
+	}
 }
 @media only screen and (min-width : 1200px) {
 	.avatar,.avatar-shadow{
@@ -570,5 +631,9 @@ button.sent:hover{
 		width: 510px;
 		left: 50%;
 		margin-left: -255px;
+	}
+	.sent.report,
+	.sent.send-mess{
+		margin-top: 50px;
 	}
 }

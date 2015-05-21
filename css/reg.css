@@ -1,0 +1,65 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+header{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+header>p{
+	margin-top: 20px;
+	color: #666;
+}
+.timeline{
+	border-bottom: 5px solid #c4d4e6;
+	margin-top: 50px;
+}
+.timeline>p{
+	color: #a5a5a5;
+	font-size: 12px;
+}
+p.active{
+	text-transform: uppercase;
+	color: #515151;
+}
+.num{
+	font-family: arial,sans-serif;
+}
+.big-rose-heart,
+.grey-heart{
+	display: inline-block;
+	background-image: url('../images/sprite.png');
+	background-repeat: no-repeat;
+}
+.big-rose-heart{
+	width: 30px;
+	height: 29px;
+	background-position: -98px -273px;
+}
+.rose-heart{
+	width: 20px;
+	height: 18px;
+	background-position: -102px -195px;
+	/*background-color: #00f;*/
+}
+.grey-heart{
+	width: 20px;
+	height: 18px;
+	background-position: -102px -222px;
+}
+.step1,.step2,.step3,.step4{
+	position: absolute;
+	bottom: -25px;
+}
+.step1{
+	left: -20px;
+	bottom: -30px;
+}
+.step2{
+	left: 30%;
+}
+.step3{
+	right: 30%;
+}
+.step4{
+	right: -20px;
+}
