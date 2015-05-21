@@ -29,6 +29,7 @@ p.active{
 	font-family: arial,sans-serif;
 }
 .big-rose-heart,
+.rose-heart,
 .grey-heart,
 .looking:after{
 	display: inline-block;
@@ -43,7 +44,7 @@ p.active{
 .rose-heart{
 	width: 20px;
 	height: 18px;
-	background-position: -102px -195px;
+	background-position: -102px -222px;
 	/*background-color: #00f;*/
 }
 .grey-heart{
@@ -57,7 +58,6 @@ p.active{
 }
 .step1{
 	left: -20px;
-	bottom: -30px;
 }
 .step2{
 	left: 30%;
@@ -67,6 +67,9 @@ p.active{
 }
 .step4{
 	right: -20px;
+}
+.active{
+	bottom: -30px;
 }
 
 .looking{
@@ -108,6 +111,7 @@ input{
 }
 input[type=email]{
 	margin-top: 0px;
+	/*border-color: #3ab2df;*/
 }
 input[type=submit]{
 	font-weight: 700;
@@ -130,4 +134,45 @@ span.check:before{
 }
 form{
 	margin-bottom: 20px;
+}
+
+
+			/*			Verification			*/
+h3.verification{
+	color: #e1778e;
+	margin-top: -30px;
+	margin-bottom: 50px;
+}
+.rose{
+	color: #e1778e;
+}
+input[type=checkbox].agree+label{
+	font-weight: 300;
+	color: #515151;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+input[type=checkbox].agree{
+	display: none;
+}
+input[type=checkbox].agree+label:before{
+	content: "";
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	border: 1px solid #e1778e;
+	margin-right: 10px;
+	border-radius: 3px;
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+input[type=checkbox].agree:checked+label:before{
+	background-image: url('../images/sprite.png');
+	background-repeat: no-repeat;
+	background-position: -104px -147px;
+	/*background-color: #00f;*/
+}
+.some-text{
+	margin-top: 40px;
+	margin-bottom: 90px;
 }
