@@ -133,10 +133,31 @@ input[type=email]{
 	/*border-color: #3ab2df;*/
 }
 input[type=submit]{
-	font-weight: 700;
+	display: none;
+}
+input[type=submit],
+input[type=submit]+label{
+	font-size: 20px;
+	text-align: center;
+	/*font-weight: 700;*/
 	background-color: #3ab2df;
 	border-color: #97e3ff;
 	border-radius: 10px;
+	font-family: 'Raleway', sans-serif;
+}
+input[type=submit]+label:after{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-right: 4px solid #fff;
+	border-bottom: 4px solid #fff;
+	right: 15%;
+	top: 12px;
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 span.check:before{
 	content: "";
@@ -230,6 +251,7 @@ input[type=checkbox].s3:checked+label:before{
 
 			/*			Step 4			*/
 .btn.green-btn{
+	display: block;
 	background-color: #12cb34;
 	border-color: #39b54a;
 }
@@ -309,6 +331,7 @@ ol{
 .some-user-text{
 	margin-bottom: 20px;
 }
+
 
 			/*			Media Queries			*/
 @media only screen and (min-width : 486px) and (max-width : 991px){
