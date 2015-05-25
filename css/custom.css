@@ -109,7 +109,7 @@ button.btn-default{
 	margin-bottom: -4px;
 }
 
-input[type=submit]{
+input[type=submit].sent-sms{
 	display: none;
 }
 input[type=submit],
