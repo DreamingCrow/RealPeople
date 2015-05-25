@@ -278,6 +278,9 @@ input[type=checkbox].s3:checked+label:before{
 	background-color: #12cb34;
 	border-color: #39b54a;
 }
+.btn.green-btn:after{
+	display: none;
+}
 input[type=file]{
 	display: none;
 }
