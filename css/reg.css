@@ -214,6 +214,29 @@ input[type=checkbox].agree:checked+label:before{
 	margin-bottom: 90px;
 }
 
+			/*			Step 2			*/
+.modal-header,
+.modal-footer{
+	border: none;
+}
+.modal-content{
+	background-color: #f6f6f6;
+}
+.modal-content h3{
+	color: #5d5d5d;
+}
+.modal-footer{
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+.modal-body input{
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.close>span{
+	color: #e1778e;
+}
+
 			/*			Step 3			*/
 input[type=checkbox].s3+label{
 	margin-top: 0px;
