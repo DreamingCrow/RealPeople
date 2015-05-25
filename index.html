@@ -28,7 +28,7 @@
 				</div>
 				<nav class="col-lg-7 col-md-5 col-sm-8 col-xs-12 navbar" role="navigation">
 					<a href="" class="search-link">Search</a>
-					<a href="" class="premium-link">Premium</a>
+					<a href="" class="premium-link"data-toggle="modal" data-target="#premium">Premium</a>
 					<a href="" class="messages-link">Messages <span>4</span></a>
 				</nav>
 				<p class="col-lg-2 col-md-3 col-sm-4 col-xs-12 active-user">
@@ -57,7 +57,7 @@
 					</div>
 
 					<button class="btn btn-primary">Upload new photo <span class="upload-img"></span></button><br>
-					<button class="btn btn-default">Choose profile photo</button>
+					<button class="btn btn-default" data-toggle="modal" data-target="#choosePhoto">Choose profile photo</button>
 				</div>
 			</div>
 			<div class="rov">
@@ -144,28 +144,334 @@
 				<p>&copy; 2015 Real.People.dating, Inc. All rights reserved.</p>
 			</footer>
 		</div>
-		<div class="avatar " id="avatar"> <!-- .active -->
-			<button class="close-btn" id="close-btn">X</button>
-			<h3 class="text-center">Choose profile photo</h3>
-			<form action="" class="col-xs-12">
-				<input type="radio" name="ava" id="ava-1">
-				<label for="ava-1" class="col-xs-4">
-					<img src="images/ava-1.png" alt="">
-				</label>
-				<input type="radio" name="ava" id="ava-2">
-				<label for="ava-2" class="col-xs-4">
-					<img src="images/ava-2.png" alt="">
-				</label>
-				<input type="radio" name="ava" id="ava-3">
-				<label for="ava-3" class="col-xs-4">
-					<img src="images/ava-3.png" alt="">
-				</label>
-				<input type="button" class="btn btn-success" value="Save" id="save-avatar">
-			</form>
+
+		<div class="modal fade" id="choosePhoto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+					</div>
+					<div class="modal-body">
+						<h3 class="modal-title text-center choose-photo-name" id="myModalLabel">
+							Choose profile photo
+						</h3>
+						<div class="row col-xs-12 row col-sm-12">
+							<form action="" class="avatar">
+								<input type="radio" name="ava" id="ava-1" class="">
+								<label for="ava-1" class="col-xs-4 col-sm-4 ">
+									<img src="images/ava-1.png" alt="">
+								</label>
+								<input type="radio" name="ava" id="ava-2" class="">
+								<label for="ava-2" class="col-xs-4 col-sm-4 ">
+									<img src="images/ava-2.png" alt="">
+								</label>
+								<input type="radio" name="ava" id="ava-3" class="">
+								<label for="ava-3" class="col-xs-4 col-sm-4 ">
+									<img src="images/ava-3.png" alt="">
+								</label>
+								<input type="button" class="btn btn-success centered avatar" value="Save" id="save-avatar"data-toggle="modal" data-target="#choosePhoto">
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="avatar-shadow " id="avatar-shadow"> <!-- .active -->
+
+		<div class="modal modal-wide fade" id="checking" tabindex="-1" role="dialog" aria-labelledby="myPremiumLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+					</div>
+					<div class="modal-body">
+						<h4 class="modal-title text-center choose-photo-name" id="myPremiumLabel">
+							Who's been checking you out?
+						</h4>
+						<div class="row col-xs-12 row checks">
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+							<div class="col-xs-6 col-md-4 col-lg-3">
+								<img src="images/a3.png" alt="" class="col-xs-12">
+								<p>
+									<span class="name cian">Alex,</span> <b class="num cian">22</b>
+									<br>
+									<span class="location grey">Boston, USA</span>
+									<br>
+									<b class="rose">8</b>
+									<span class="rose">Shared interests</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="background " id="background"></div> <!-- .active -->
+
+		<div class="modal modal-wide fade" id="premium" tabindex="-1" role="dialog" aria-labelledby="myPremiumLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+					</div>
+					<div class="modal-body">
+						<h4 class="modal-title text-center choose-photo-name grey-col" id="myPremiumLabel">
+							Some pretty sweet features
+						</h4>
+						<div class="row col-xs-12 row">
+							<div class="col-lg-2 col-sm-4 col-xs-6">
+								<img src="images/" alt="">
+								<br>
+								<h3 class="text-center rose">For Free</h3>
+								<p class="text-center grey-col">
+									Can only message 10 different people a day
+								</p>
+								<p class="text-center grey-col">
+									Can only upload 3 photos
+								</p>
+								<p class="text-center grey-col">
+									store up to 500 messages
+								</p>
+								<button class="col-xs-8 col-xs-offset-2">Select</button>
+							</div>
+							<div class="col-lg-2 col-sm-4 col-xs-6">
+								<img src="images/" alt="">
+								<br>
+								<h3 class="text-center rose">$<b class="num">1</b> a month</h3>
+								<p class="text-center grey-col">
+									Everything before plus no ads
+								</p>
+								<p class="text-center grey-col">
+									Can message 50 people a day
+								</p>
+								<p class="text-center grey-col">
+									Can upload 10 photos
+								</p>
+								<p class="text-center grey-col">
+									See if people read your message
+								</p>
+								<p class="text-center grey-col">
+									Store up to 2500 messages
+								<button class="col-xs-8 col-xs-offset-2">Select</button>
+							</div>
+							<div class="col-lg-2 col-sm-4 col-xs-6">
+								<img src="images/" alt="">
+								<br>
+								<h3 class="text-center rose">$<b class="num">10</b> a month</h3>
+								<p class="text-center grey-col">
+									Everything from before
+								</p>
+								<p class="text-center grey-col">
+									Plus unlimited messaging
+								</p>
+								<p class="text-center grey-col">
+									Unlimited photos
+								</p>
+								<p class="text-center grey-col">
+									Unlimited storage
+								</p>
+								<p class="text-center grey-col">
+									Higher priority in search
+								</p>
+								<button class="col-xs-8 col-xs-offset-2">Select</button>
+							</div>
+							<div class="col-lg-2 col-sm-4 col-xs-6">
+								<img src="images/" alt="">
+								<br>
+								<h3 class="text-center rose">$<b class="num">100</b> a month</h3>
+								<p class="text-center grey-col">
+									Everything from before
+								</p>
+								<p class="text-center grey-col">
+									Guaranteed live date once a month (beta)
+								</p>
+								<button class="col-xs-8 col-xs-offset-2">Select</button>
+							</div>
+							<div class="col-lg-2 col-sm-4 col-xs-6">
+								<img src="images/" alt="">
+								<br>
+								<h3 class="text-center rose">$<b class="num">50</b> a month</h3>
+								<p class="text-center grey-col">
+									Be bachelor/bachelorette of the week
+								</p>
+								<p class="text-center grey-col">
+									Be featured on the site and in our blog post
+								</p>
+								<button class="col-xs-8 col-xs-offset-2">Select</button>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
