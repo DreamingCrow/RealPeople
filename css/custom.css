@@ -4,12 +4,15 @@ body{
 header{
 	margin: 30px 0;
 }
+textarea{
+	resize:none;
+}
 
 			/*			Sprites			*/
 .img-art,.img-video,.img-design,.img-history,.img-pictures,.img-location,
 .search-link:before,.premium-link:before,.messages-link:before,.edit,
 div.editable>span,.user-info>span:before,.user-menu-img,.upload-img,.delete-btn,
-.answer-btn,.block-btn,.report:before,.sent.send-mess:before{
+.answer-btn,.block-btn,.report:before,.sent.send-mess:before,.pay-img{
 	background-image: url('../images/sprite.png');
 	background-repeat: no-repeat;
 }
@@ -307,6 +310,49 @@ footer p{
 }*/
 
 
+.features>div>button{
+	border: 1px solid #1bce2c;
+	border-radius: 5px;
+	color: #1bce2c;
+	background-color: transparent;
+	margin-bottom: 20px;
+}
+.features>div:hover>button{
+	background-color: #1bce2c;
+	color: #fff;
+}
+.features>div:hover{
+	border: 1px solid #0f0;
+	border-radius: 10px;
+}
+.features>div{
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+.pay-img{
+	width: 80px;
+	height: 80px;
+	margin: 20px auto;
+	margin-top: 30px;
+	/*background-color: #f0f;*/
+}
+.pay-img-1{
+	background-position: -138px -10px;
+}
+.pay-img-2{
+	background-position: -138px -103px;
+}
+.pay-img-3{
+	background-position: -138px -181px;
+}
+.pay-img-4{
+	background-position: -138px -261px;
+}
+.pay-img-5{
+	background-position: -138px -346px;
+}
+
+
 			/*			Messages			*/
 /*.mesgs{
 	max-height: 600px;
@@ -533,6 +579,35 @@ button.sent:hover{
 	letter-spacing: 0.05em;
 }
 
+
+			/*			Search			*/
+.search-parameters>select,
+.search-parameters>input{
+	border: none;
+	border-bottom: 2px solid #e1778e;
+	margin: 0 20px;
+	color: #e1778e;
+	outline:none;
+	display: inline-block;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+}
+.search-parameters>input[type=number]{
+	width: 50px;
+	text-align: center;
+}
+.search-parameters>select:before{
+	content: ">";
+	display: block;
+	color: #f0f;
+	position: absolute;
+	z-index: 500;
+}
+
+
+
+
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 	.avatar input[type=radio]:checked + label:before{
 		border-bottom: 4px solid #12cb34;
@@ -547,6 +622,25 @@ button.sent:hover{
 	}
 	.avatar.btn-success{
 		margin-top: 30px;
+	}
+	#premium .modal-header{
+		height: 40px;
+	}
+	.features{
+		width: 100%;
+		padding: auto 100px;
+		float: inherit;
+		margin: 0;
+	}
+	.features>div{
+		min-height: 450px;
+	}
+	.features>div>button{
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		margin-left: -40px;
+		width: 80px;
 	}
 }
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
@@ -567,6 +661,25 @@ button.sent:hover{
 	.sent.report,
 	.sent.send-mess{
 		margin-top: 50px;
+	}
+	#premium .modal-header{
+		height: 40px;
+	}
+	.features{
+		width: 100%;
+		padding: auto 100px;
+		float: inherit;
+		margin: 0;
+	}
+	.features>div{
+		min-height: 500px;
+	}
+	.features>div>button{
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		margin-left: -40px;
+		width: 80px;
 	}
 }
 @media only screen and (min-width : 1200px) {
@@ -593,5 +706,28 @@ button.sent:hover{
 	}
 	.modal-wide .modal-body {
 		overflow-y: auto;
+	}
+	#premium.modal.modal-wide .modal-dialog {
+		width: 80%;
+	}
+	#premium .modal-header{
+		height: 40px;
+	}
+	.features{
+		width: 100%;
+		padding: auto 100px;
+		float: inherit;
+		margin: 0;
+	}
+	.features>div{
+		width: 20%;
+		min-height: 550px;
+	}
+	.features>div>button{
+		position: absolute;
+		bottom: 40px;
+		left: 50%;
+		margin-left: -40px;
+		width: 80px;
 	}
 }
