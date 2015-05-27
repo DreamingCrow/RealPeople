@@ -126,6 +126,11 @@ input[type=submit]+label:after{
 	font-size: 12px;
 }
 
+.new-mess{
+	width: 90%;
+	margin: 10px 5%;
+}
+
 			/*			Form for choosing user avatar			*/
 
 .avatar img{
@@ -290,6 +295,10 @@ input[type=submit]+label:after{
 
 	.modal.modal-wide .modal-dialog {
 		width: 60%;
+	}
+
+	.modal.wide-mess .modal-dialog {
+		width: 50%;
 	}
 
 	.modal-wide .modal-body {
