@@ -1,3 +1,28 @@
+/*.modal-content.alert,
+.modal-content.ok{
+	min-width: 200px;
+	width: 20%;
+	text-align: center;
+	padding: 5px;
+	font-size: 14px;
+}*/
+.modal-content.alert{
+	padding: 5px;
+	font-size: 20px;
+	border-color: #E1778E;
+	box-shadow: 0px 0px 30px #E1778E;
+	text-align: center;
+}
+.modal-content.ok{
+	padding: 5px;
+	font-size: 20px;
+	border-color: #7FF069;
+	box-shadow: 0px 0px 30px #7FF069;
+	text-align: center;
+}
+
+
+			/*			svsdv			*/
 .modal-header,
 .modal-footer{
 	border: none;

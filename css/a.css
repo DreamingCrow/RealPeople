@@ -1,0 +1,87 @@
+.inline-interest {
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	/*border: 1px dashed #f00;*/
+	margin: 0px;
+	outline: none;
+}
+.inline-interest > .icon-container {
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+}
+.inline-interest:hover > .icon-container {
+	background-image: url('../images/sprite-hover.png');
+}
+.inline-interest:hover .int-name {
+	color: #004e6b;
+	text-transform: uppercase;
+}
+.inline-interest .a-tooltip {
+	display: none;
+}
+.inline-interest:hover p.a-tooltip {
+	display: block;
+	position: absolute;
+	width: 768px;
+	height: 100px;
+	padding: 8px;
+	background-color: #fff;
+	border: 1px solid #7dceff;
+	border-radius: 5px;
+}
+.inline-interest:hover p.a-tooltip:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border: none;
+	border-left: 1px solid #7dceff;
+	border-top: 1px solid #7dceff;
+	top: -6px;
+	left: 65px;
+	background-color: #fff;
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+}
+.inline-interest:nth-child(2):hover p.a-tooltip {
+	left: -153px;
+}
+.inline-interest:nth-child(2):hover p.a-tooltip:before {
+	left: 220px;
+}
+
+.inline-interest:nth-child(3):hover p.a-tooltip {
+	left: -307px;
+}
+.inline-interest:nth-child(3):hover p.a-tooltip:before {
+	left: 373px;
+}
+
+.inline-interest:nth-child(4):hover p.a-tooltip {
+	left: -460px;
+}
+.inline:nth-child(4):hover p.a-tooltip:before {
+	left: 526px;
+}
+
+.inline-interest:last-child:hover p.a-tooltip {
+	left: -614px;
+}
+.inline-interest:last-child:hover p.a-tooltip:before {
+	left: 679px;
+}
+.a-center {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	/*border: 1px solid #f0f;*/
+	padding: 0;
+	width: 768px;
+}
+.user-int-container {
+	width: 100%;
+}
